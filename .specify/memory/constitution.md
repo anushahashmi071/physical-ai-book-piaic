@@ -1,55 +1,44 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 1.0.0 → 1.1.0
+- Modified principles: Added 6 specific principles for Physical AI textbook project
+- Added sections: Content and Structural Requirements, Development and Writing Standards
+- Removed sections: None
+- Templates requiring updates: ⚠ pending review of .specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md
+- Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics — AI-Native Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Embodied Intelligence
+AI must be explained as systems operating in the physical world
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Systems Thinking
+Every concept is part of a larger architecture
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Simulation-First
+All learning assumes simulation before real hardware
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Clarity Before Complexity
+Intuition precedes math and implementation
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Real-World Constraints
+Latency, compute limits, sensors, and failure modes are always discussed
 
-### [PRINCIPLE_6_NAME]
+### Pedagogical Excellence
+Explain the "why" before the "how"; Introduce mental models before formal definitions; Prefer diagrams and flow descriptions over dense equations; Use consistent metaphors (nervous system, brain, body, senses, actions)
 
+## Content and Structural Requirements
+No unexplained acronyms; No assumed cross-chapter knowledge; No hardware dependency beyond simulation unless explicitly stated; Code examples must be minimal, illustrative, and non-boilerplate; Each chapter MUST be self-contained and follow the exact structure: Concept Overview (what this is and why it matters), Mental Model (analogy or system intuition), System Architecture (components and data flow), Minimal Example (illustrative code or pseudo-code only), Common Failure Modes (what breaks in practice), Industry Reality (how this appears in real systems)
 
-[PRINCIPLE__DESCRIPTION]
+## Development and Writing Standards
+Write in modular, retrievable sections; Avoid long narrative paragraphs without clear semantic boundaries; Each section must stand alone for RAG retrieval; Avoid references like "as discussed earlier"; All factual explanations must be explicit and grounded in text; Sections must be answerable without external sources; Summaries must be precise, non-speculative, and technical; Content must be adaptable to beginner, intermediate, and advanced levels; Avoid fixed difficulty assumptions; Explanations should be rewritable without changing factual meaning; Professional, technical, and instructional tone; Neutral and globally accessible English; Avoid slang, marketing language, or hype
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Scope Boundaries
+Focus on ROS 2, Gazebo, Unity, NVIDIA Isaac, and Vision-Language-Action systems; Do not include unrelated AI topics (e.g., pure NLP, web apps, generic ML); Physical AI is the unifying theme
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+All content generated for this project MUST strictly follow this constitution; Target audience: Undergraduate and early-graduate students in Computer Science, AI, or Engineering with basic Python knowledge assumed but no prior robotics or ROS experience assumed; Success Definition: A student who completes this book can conceptually design, simulate, and reason about a humanoid robot controlled by AI agents operating in physical environments
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: 2026-01-17 | **Last Amended**: 2026-01-17

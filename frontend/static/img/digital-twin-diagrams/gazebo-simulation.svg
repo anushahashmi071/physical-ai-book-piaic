@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <style>
+    .environment { fill: #f0f8ff; stroke: #4682b4; stroke-width: 2; }
+    .robot { fill: #ff6b6b; stroke: #d63031; stroke-width: 2; }
+    .sensor { fill: #fdcb6e; stroke: #e17055; stroke-width: 2; }
+    .physics { fill: #a29bfe; stroke: #6c5ce7; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #666; }
+    .connection { stroke: #00b894; stroke-width: 2; }
+  </style>
+
+  <!-- Gazebo Environment -->
+  <rect x="50" y="50" width="700" height="500" rx="20" class="environment"/>
+  <text x="60" y="40" class="text">Gazebo Simulation Environment</text>
+
+  <!-- Ground Plane -->
+  <rect x="60" y="450" width="680" height="80" fill="#8B4513" stroke="#654321" stroke-width="1"/>
+  <text x="70" y="440" class="label">Ground Plane</text>
+
+  <!-- Obstacles -->
+  <rect x="200" y="350" width="80" height="80" fill="#a9a9a9" stroke="#696969" stroke-width="2"/>
+  <rect x="500" y="300" width="60" height="120" fill="#a9a9a9" stroke="#696969" stroke-width="2"/>
+
+  <!-- Robot Model -->
+  <circle cx="400" cy="200" r="30" class="robot"/>
+  <rect x="370" y="230" width="60" height="80" class="robot"/>
+  <rect x="350" y="250" width="20" height="60" class="robot"/>
+  <rect x="430" y="250" width="20" height="60" class="robot"/>
+  <text x="370" y="320" class="label">Humanoid Robot</text>
+
+  <!-- Sensors -->
+  <circle cx="420" cy="180" r="15" class="sensor"/>
+  <text x="410" y="170" class="label">Cam</text>
+
+  <circle cx="390" cy="220" r="10" class="sensor"/>
+  <text x="380" y="210" class="label">IMU</text>
+
+  <!-- Physics Engine Box -->
+  <rect x="600" y="80" width="140" height="100" class="physics" rx="5"/>
+  <text x="610" y="100" class="text">Physics Engine</text>
+  <text x="610" y="120" class="label">ODE/Bullet/DART</text>
+  <text x="610" y="140" class="label">Gravity, Collisions</text>
+  <text x="610" y="160" class="label">Rigid Body Dynamics</text>
+
+  <!-- Sensor Data Flow -->
+  <line x1="420" y1="180" x2="450" y2="150" class="connection"/>
+  <line x1="390" y1="220" x2="360" y2="200" class="connection"/>
+
+  <!-- Data Labels -->
+  <text x="450" y="140" class="label">Camera Data</text>
+  <text x="330" y="190" class="label">IMU Data</text>
+
+  <!-- Legend -->
+  <rect x="100" y="550" width="600" height="30" fill="white" stroke="#ccc" rx="5"/>
+  <text x="110" y="570" class="text">Gazebo: Physics-based 3D simulation environment with realistic sensor modeling</text>
+</svg>

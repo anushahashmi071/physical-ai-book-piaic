@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <style>
+    .physical { fill: #4a90e2; stroke: #2c5aa0; stroke-width: 2; }
+    .digital { fill: #7ed321; stroke: #5cb85c; stroke-width: 2; }
+    .connection { stroke: #f5a623; stroke-width: 3; stroke-dasharray: 5,5; }
+    .text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #666; }
+  </style>
+
+  <!-- Physical Robot -->
+  <rect x="100" y="150" width="200" height="300" rx="10" class="physical"/>
+  <circle cx="200" cy="180" r="40" class="physical"/>
+  <rect x="150" y="250" width="100" height="180" class="physical"/>
+  <rect x="120" y="300" width="60" height="100" class="physical"/>
+  <rect x="220" y="300" width="60" height="100" class="physical"/>
+  <text x="120" y="140" class="text">Physical Robot</text>
+  <text x="110" y="470" class="label">(Real Hardware)</text>
+
+  <!-- Digital Twin -->
+  <rect x="500" y="150" width="200" height="300" rx="10" class="digital"/>
+  <circle cx="600" cy="180" r="40" class="digital"/>
+  <rect x="550" y="250" width="100" height="180" class="digital"/>
+  <rect x="520" y="300" width="60" height="100" class="digital"/>
+  <rect x="620" y="300" width="60" height="100" class="digital"/>
+  <text x="520" y="140" class="text">Digital Twin</text>
+  <text x="510" y="470" class="label">(Virtual Model)</text>
+
+  <!-- Connection arrows -->
+  <line x1="300" y1="250" x2="500" y2="250" class="connection"/>
+  <line x1="500" y1="250" x2="490" y2="245" class="connection"/>
+  <line x1="500" y1="250" x2="490" y2="255" class="connection"/>
+
+  <line x1="300" y1="350" x2="500" y2="350" class="connection"/>
+  <line x1="300" y1="350" x2="310" y2="345" class="connection"/>
+  <line x1="300" y1="350" x2="310" y2="355" class="connection"/>
+
+  <text x="380" y="230" class="label">Data Sync</text>
+  <text x="380" y="370" class="label">Control</text>
+
+  <!-- Legend -->
+  <rect x="50" y="50" width="700" height="40" fill="white" stroke="#ccc" rx="5"/>
+  <text x="60" y="75" class="text">Digital Twin: Virtual replica of physical system for simulation and testing</text>
+</svg>

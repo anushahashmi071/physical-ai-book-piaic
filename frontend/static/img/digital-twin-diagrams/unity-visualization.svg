@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <style>
+    .unity-env { fill: #fff4e6; stroke: #ff9f43; stroke-width: 2; }
+    .robot-model { fill: #a55eea; stroke: #6a3aa2; stroke-width: 2; }
+    .rendering { fill: #26de81; stroke: #20bf6b; stroke-width: 2; }
+    .camera { fill: #fd79a8; stroke: #e84393; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #666; }
+    .connection { stroke: #fdcb6e; stroke-width: 2; }
+  </style>
+
+  <!-- Unity Scene -->
+  <rect x="50" y="50" width="700" height="500" rx="20" class="unity-env"/>
+  <text x="60" y="40" class="text">Unity Visualization Environment</text>
+
+  <!-- 3D Scene Viewport -->
+  <rect x="100" y="100" width="600" height="400" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  <text x="110" y="90" class="label">3D Viewport</text>
+
+  <!-- Unity Robot Model -->
+  <circle cx="400" cy="200" r="35" class="robot-model"/>
+  <rect x="365" y="235" width="70" height="100" class="robot-model"/>
+  <rect x="340" y="260" width="25" height="70" class="robot-model"/>
+  <rect x="435" y="260" width="25" height="70" class="robot-model"/>
+  <text x="370" y="350" class="label">3D Robot Model</text>
+
+  <!-- Unity Camera -->
+  <polygon points="350,150 370,140 370,160" class="camera"/>
+  <text x="330" y="145" class="label">Camera</text>
+
+  <!-- Lighting -->
+  <circle cx="200" cy="120" r="20" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="2"/>
+  <line x1="200" y1="120" x2="180" y2="100" stroke="#fdcb6e" stroke-width="2"/>
+  <line x1="200" y1="120" x2="220" y2="90" stroke="#fdcb6e" stroke-width="2"/>
+  <line x1="200" y1="120" x2="170" y2="130" stroke="#fdcb6e" stroke-width="2"/>
+  <text x="180" y="80" class="label">Lighting</text>
+
+  <!-- Rendering Pipeline -->
+  <rect x="600" y="80" width="140" height="120" class="rendering" rx="5"/>
+  <text x="610" y="100" class="text">Rendering Pipeline</text>
+  <text x="610" y="120" class="label">Shaders & Effects</text>
+  <text x="610" y="140" class="label">Materials</text>
+  <text x="610" y="160" class="label">Post-Processing</text>
+
+  <!-- Visualization Data Flow -->
+  <line x1="400" y1="200" x2="400" y2="150" class="connection"/>
+  <line x1="400" y1="150" x2="370" y2="140" class="connection"/>
+  <line x1="400" y1="150" x2="430" y2="140" class="connection"/>
+
+  <!-- Interaction -->
+  <rect x="120" y="450" width="150" height="60" fill="#74b9ff" stroke="#0984e3" stroke-width="2" rx="5"/>
+  <text x="130" y="470" class="text">User Interaction</text>
+  <text x="140" y="490" class="label">Controls & UI</text>
+
+  <!-- Connection to Data -->
+  <line x1="270" y1="480" x2="360" y2="350" stroke="#a29bfe" stroke-width="3"/>
+  <text x="280" y="400" class="label">Real-time Data</text>
+
+  <!-- Legend -->
+  <rect x="100" y="550" width="600" height="30" fill="white" stroke="#ccc" rx="5"/>
+  <text x="110" y="570" class="text">Unity: High-quality visualization and user interaction for robotic systems</text>
+</svg>

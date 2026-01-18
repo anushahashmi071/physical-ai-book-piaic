@@ -1,0 +1,71 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold">Node Mapping: Functions to ROS 2 Nodes</text>
+
+  <!-- AI Agent Functions -->
+  <rect x="50" y="80" width="150" height="240" rx="10" ry="10" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="125" y="100" text-anchor="middle" fill="#4A148C" font-size="12" font-weight="bold">AI Agent</text>
+  <text x="125" y="120" text-anchor="middle" fill="#4A148C" font-size="10">Functions</text>
+
+  <!-- Function boxes -->
+  <rect x="70" y="140" width="110" height="30" rx="5" ry="5" fill="#F3E5F5" stroke="#AB47BC" stroke-width="1"/>
+  <text x="125" y="160" text-anchor="middle" fill="#4A148C" font-size="9">Perception</text>
+
+  <rect x="70" y="180" width="110" height="30" rx="5" ry="5" fill="#F3E5F5" stroke="#AB47BC" stroke-width="1"/>
+  <text x="125" y="200" text-anchor="middle" fill="#4A148C" font-size="9">Decision Making</text>
+
+  <rect x="70" y="220" width="110" height="30" rx="5" ry="5" fill="#F3E5F5" stroke="#AB47BC" stroke-width="1"/>
+  <text x="125" y="240" text-anchor="middle" fill="#4A148C" font-size="9">Action Selection</text>
+
+  <rect x="70" y="260" width="110" height="30" rx="5" ry="5" fill="#F3E5F5" stroke="#AB47BC" stroke-width="1"/>
+  <text x="125" y="280" text-anchor="middle" fill="#4A148C" font-size="9">Learning</text>
+
+  <!-- ROS 2 Nodes -->
+  <rect x="500" y="80" width="150" height="240" rx="10" ry="10" fill="#BBDEFB" stroke="#1976D2" stroke-width="2"/>
+  <text x="575" y="100" text-anchor="middle" fill="#0D47A1" font-size="12" font-weight="bold">ROS 2 Nodes</text>
+  <text x="575" y="120" text-anchor="middle" fill="#0D47A1" font-size="10">Implementation</text>
+
+  <!-- Node boxes -->
+  <rect x="520" y="140" width="110" height="30" rx="5" ry="5" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1"/>
+  <text x="575" y="160" text-anchor="middle" fill="#0D47A1" font-size="9">Sensor Fusion</text>
+
+  <rect x="520" y="180" width="110" height="30" rx="5" ry="5" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1"/>
+  <text x="575" y="200" text-anchor="middle" fill="#0D47A1" font-size="9">Behavior Planner</text>
+
+  <rect x="520" y="220" width="110" height="30" rx="5" ry="5" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1"/>
+  <text x="575" y="240" text-anchor="middle" fill="#0D47A1" font-size="9">Motion Control</text>
+
+  <rect x="520" y="260" width="110" height="30" rx="5" ry="5" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1"/>
+  <text x="575" y="280" text-anchor="middle" fill="#0D47A1" font-size="9">Learning Node</text>
+
+  <!-- Mapping arrows -->
+  <line x1="180" y1="155" x2="520" y2="155" stroke="#212121" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <line x1="180" y1="195" x2="520" y2="195" stroke="#212121" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <line x1="180" y1="235" x2="520" y2="235" stroke="#212121" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <line x1="180" y1="275" x2="520" y2="275" stroke="#212121" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#212121"/>
+    </marker>
+  </defs>
+
+  <!-- Mapping labels -->
+  <text x="350" y="150" text-anchor="middle" fill="#212121" font-size="8">Maps to</text>
+  <text x="350" y="190" text-anchor="middle" fill="#212121" font-size="8">Maps to</text>
+  <text x="350" y="230" text-anchor="middle" fill="#212121" font-size="8">Maps to</text>
+  <text x="350" y="270" text-anchor="middle" fill="#212121" font-size="8">Maps to</text>
+
+  <!-- Legend -->
+  <rect x="250" y="340" width="300" height="40" fill="none" stroke="#BDBDBD" stroke-width="1"/>
+  <rect x="270" y="355" width="15" height="15" fill="#F3E5F5" stroke="#AB47BC" stroke-width="1"/>
+  <text x="295" y="367" fill="#212121" font-size="9">AI Functions</text>
+
+  <rect x="400" y="355" width="15" height="15" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1"/>
+  <text x="425" y="367" fill="#212121" font-size="9">ROS 2 Nodes</text>
+
+  <line x1="510" y1="362" x2="525" y2="362" stroke="#212121" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="540" y="365" fill="#212121" font-size="9">Function Mapping</text>
+</svg>

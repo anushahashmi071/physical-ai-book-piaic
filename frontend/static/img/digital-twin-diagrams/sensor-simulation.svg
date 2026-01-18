@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <style>
+    .environment { fill: #f0f9ff; stroke: #3498db; stroke-width: 2; }
+    .sensor { fill: #f8c471; stroke: #dc7633; stroke-width: 2; }
+    .camera { fill: #85c1e9; stroke: #2980b9; stroke-width: 2; }
+    .lidar { fill: #bb8fce; stroke: #8e44ad; stroke-width: 2; }
+    .imu { fill: #82e0aa; stroke: #27ae60; stroke-width: 2; }
+    .noise { fill: #f1948a; stroke: #e74c3c; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #666; }
+    .data-flow { stroke: #e67e22; stroke-width: 3; stroke-dasharray: 5,5; }
+  </style>
+
+  <!-- Environment -->
+  <rect x="50" y="50" width="700" height="500" rx="20" class="environment"/>
+  <text x="60" y="40" class="text">Sensor Simulation Environment</text>
+
+  <!-- Scene Objects -->
+  <rect x="200" y="300" width="100" height="150" fill="#a9a9a9" stroke="#696969" stroke-width="2"/>
+  <circle cx="500" cy="250" r="60" fill="#d35400" stroke="#e67e22" stroke-width="2"/>
+  <rect x="350" y="350" width="200" height="80" fill="#7f8c8d" stroke="#34495e" stroke-width="2"/>
+
+  <!-- Camera Sensor -->
+  <rect x="100" y="150" width="60" height="40" class="camera"/>
+  <circle cx="160" cy="170" r="20" fill="none" stroke="#2980b9" stroke-width="3"/>
+  <line x1="160" y1="170" x2="200" y2="170" stroke="#2980b9" stroke-width="2"/>
+  <text x="105" y="140" class="label">Camera</text>
+  <text x="170" y="160" class="label">Image Data</text>
+
+  <!-- LiDAR Sensor -->
+  <rect x="100" y="220" width="60" height="40" class="lidar"/>
+  <circle cx="130" cy="240" r="25" fill="none" stroke="#8e44ad" stroke-width="2"/>
+  <line x1="130" y1="240" x2="250" y2="200" stroke="#8e44ad" stroke-width="1"/>
+  <line x1="130" y1="240" x2="280" y2="240" stroke="#8e44ad" stroke-width="1"/>
+  <line x1="130" y1="240" x2="250" y2="280" stroke="#8e44ad" stroke-width="1"/>
+  <text x="105" y="210" class="label">LiDAR</text>
+  <text x="290" y="230" class="label">Distance Data</text>
+
+  <!-- IMU Sensor -->
+  <rect x="100" y="290" width="60" height="40" class="imu"/>
+  <rect x="110" y="300" width="10" height="10" fill="#27ae60"/>
+  <rect x="125" y="300" width="10" height="10" fill="#27ae60"/>
+  <rect x="110" y="315" width="10" height="10" fill="#27ae60"/>
+  <rect x="125" y="315" width="10" height="10" fill="#27ae60"/>
+  <text x="105" y="280" class="label">IMU</text>
+  <text x="170" y="295" class="label">Accel/Gyro Data</text>
+
+  <!-- Noise Model -->
+  <rect x="600" y="100" width="140" height="100" class="noise" rx="5"/>
+  <text x="610" y="120" class="text">Noise Model</text>
+  <text x="610" y="140" class="label">Gaussian</text>
+  <text x="610" y="160" class="label">Salt & Pepper</text>
+  <text x="610" y="180" class="label">Bias & Drift</text>
+
+  <!-- Data Flows -->
+  <line x1="160" y1="170" x2="300" y2="170" class="data-flow"/>
+  <line x1="160" y1="240" x2="300" y2="240" class="data-flow"/>
+  <line x1="160" y1="310" x2="300" y2="310" class="data-flow"/>
+
+  <!-- Real vs Simulated -->
+  <rect x="300" y="150" width="150" height="40" fill="#e8f6f3" stroke="#1abc9c" stroke-width="2"/>
+  <text x="310" y="175" class="label">Simulated Data</text>
+
+  <rect x="300" y="220" width="150" height="40" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="310" y="245" class="label">With Noise & Distortion</text>
+
+  <rect x="300" y="290" width="150" height="40" fill="#ebf5fb" stroke="#3498db" stroke-width="2"/>
+  <text x="310" y="315" class="label">Realistic Imperfections</text>
+
+  <!-- Comparison -->
+  <rect x="500" y="350" width="240" height="150" fill="white" stroke="#ccc" stroke-width="2" rx="5"/>
+  <text x="510" y="370" class="text">Sensor Simulation Benefits:</text>
+  <text x="520" y="390" class="label">• Realistic noise modeling</text>
+  <text x="520" y="410" class="label">• Controlled testing</text>
+  <text x="520" y="430" class="label">• Safety without hardware</text>
+  <text x="520" y="450" class="label">• Reproducible scenarios</text>
+
+  <!-- Legend -->
+  <rect x="100" y="550" width="600" height="30" fill="white" stroke="#ccc" rx="5"/>
+  <text x="110" y="570" class="text">Sensor Simulation: Realistic virtual sensors with noise, distortion, and imperfections</text>
+</svg>

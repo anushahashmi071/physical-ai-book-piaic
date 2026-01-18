@@ -1,0 +1,81 @@
+.digital-twin-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.simulation-controls {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.simulation-controls .btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.simulation-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.robot-visualization {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.position-data {
+  margin-top: 1rem;
+}
+
+.position-data p {
+  margin: 0.25rem 0;
+  font-family: monospace;
+}
+
+.sensor-data {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sensor-item {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #f0f8ff;
+  border-left: 3px solid #007bff;
+}
+
+.simulation-status {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .simulation-display {
+    grid-template-columns: 1fr;
+  }
+}

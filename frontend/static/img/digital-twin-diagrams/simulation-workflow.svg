@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <style>
+    .simulation { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+    .validation { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+    .hardware { fill: #ffebee; stroke: #f44336; stroke-width: 2; }
+    .feedback { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+    .process { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 3; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Simulation Phase -->
+  <rect x="50" y="50" width="200" height="200" class="simulation" rx="10"/>
+  <text x="60" y="80" class="text">Simulation</text>
+  <text x="60" y="100" class="label">Phase</text>
+
+  <circle cx="150" cy="150" r="40" fill="#a5d6a7" stroke="#4caf50" stroke-width="2"/>
+  <text x="120" y="155" class="label">Test</text>
+  <text x="120" y="170" class="label">Algorithms</text>
+
+  <!-- Validation Phase -->
+  <rect x="300" y="50" width="200" height="200" class="validation" rx="10"/>
+  <text x="310" y="80" class="text">Validation</text>
+  <text x="310" y="100" class="label">Phase</text>
+
+  <rect x="350" y="130" width="100" height="60" fill="#ffe0b2" stroke="#ff9800" stroke-width="2" rx="5"/>
+  <text x="360" y="165" class="label">Validate</text>
+  <text x="360" y="180" class="label">Performance</text>
+
+  <!-- Hardware Phase -->
+  <rect x="550" y="50" width="200" height="200" class="hardware" rx="10"/>
+  <text x="560" y="80" class="text">Hardware</text>
+  <text x="560" y="100" class="label">Phase</text>
+
+  <rect x="600" y="130" width="100" height="60" fill="#ffcdd2" stroke="#f44336" stroke-width="2" rx="5"/>
+  <text x="610" y="165" class="label">Deploy to</text>
+  <text x="610" y="180" class="label">Robot</text>
+
+  <!-- Process Stages -->
+  <rect x="50" y="300" width="700" height="250" class="process" rx="10"/>
+  <text x="60" y="330" class="text">Simulation-First Workflow</text>
+
+  <!-- Workflow Steps -->
+  <rect x="80" y="360" width="120" height="50" fill="#c8e6c9" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="90" y="390" class="label">Design</text>
+
+  <rect x="230" y="360" width="120" height="50" fill="#c8e6c9" stroke="#4caf50" stroke-width="2" rx="5"/>
+  <text x="240" y="390" class="label">Simulate</text>
+
+  <rect x="380" y="360" width="120" height="50" fill="#fff9c4" stroke="#ffeb3b" stroke-width="2" rx="5"/>
+  <text x="390" y="390" class="label">Validate</text>
+
+  <rect x="530" y="360" width="120" height="50" fill="#ffcdd2" stroke="#f44336" stroke-width="2" rx="5"/>
+  <text x="540" y="390" class="label">Deploy</text>
+
+  <!-- Arrows between workflow steps -->
+  <line x1="200" y1="385" x2="230" y2="385" class="arrow"/>
+  <line x1="350" y1="385" x2="380" y2="385" class="arrow"/>
+  <line x1="500" y1="385" x2="530" y2="385" class="arrow"/>
+
+  <!-- Feedback Loop -->
+  <path d="M 650 385 C 700 385, 700 500, 140 500 C 90 500, 90 410, 140 410"
+        fill="none" stroke="#9c27b0" stroke-width="3" stroke-dasharray="5,5"
+        marker-end="url(#arrowhead)"/>
+  <text x="200" y="520" class="label">Feedback Loop: Issues found in hardware</text>
+  <text x="200" y="535" class="label">are fixed in simulation first</text>
+
+  <!-- Benefits -->
+  <rect x="80" y="560" width="640" height="30" fill="white" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="90" y="580" class="label">Safe • Reproducible • Cost-effective • Risk-reduced • Iterative development</text>
+
+  <!-- Legend -->
+  <rect x="100" y="270" width="600" height="20" fill="white" stroke="#ccc" rx="5"/>
+  <text x="110" y="285" class="text">Simulation-First: Develop, test, and validate in simulation before hardware deployment</text>
+</svg>
