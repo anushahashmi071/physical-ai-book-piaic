@@ -9,6 +9,8 @@ title: "Chapter 6: ROS 2 Perception Integration"
 
 ROS 2 (Robot Operating System 2) integration for perception systems connects sensor processing and interpretation modules to the broader robotic communication and computation framework. Unlike its predecessor, ROS 2 uses DDS (Data Distribution Service) for communication, providing improved real-time performance, security, and scalability. This integration allows perception algorithms to seamlessly exchange information with other robotic components, enabling coordinated behavior and decision-making across distributed systems.
 
+![ROS 2 Perception Integration](/img/perception-diagrams/ros2-perception-integration.svg)
+
 ROS 2 integration enables the development and deployment of perception systems that maintain the same communication patterns and interfaces used in real-world robotic deployments. This approach allows for extensive testing of perception algorithms in simulation while maintaining compatibility with hardware systems, facilitating the transition from simulation to real-world deployment.
 
 ## Mental Model

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <style>
+    .safety { fill: #ffebee; stroke: #d32f2f; stroke-width: 2; }
+    .execution { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+    .validation { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .monitoring { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" text-anchor="middle" font-size="20">Safe Action Execution in VLA Systems</text>
+
+  <!-- Planned Action Input -->
+  <rect x="50" y="80" width="180" height="80" class="execution" rx="10"/>
+  <text x="140" y="110" class="text" text-anchor="middle">Planned Action</text>
+  <text x="140" y="130" class="label" text-anchor="middle">• From Cognitive Planning</text>
+  <text x="140" y="145" class="label" text-anchor="middle">• Action Sequence</text>
+
+  <!-- Safety Validation -->
+  <rect x="280" y="80" width="200" height="80" class="validation" rx="10"/>
+  <text x="380" y="110" class="text" text-anchor="middle">Safety Validation</text>
+  <text x="380" y="130" class="label" text-anchor="middle">• Collision Checking</text>
+  <text x="380" y="145" class="label" text-anchor="middle">• Reachability Analysis</text>
+
+  <!-- Action Execution -->
+  <rect x="530" y="80" width="180" height="80" class="execution" rx="10"/>
+  <text x="620" y="110" class="text" text-anchor="middle">Action Execution</text>
+  <text x="620" y="130" class="label" text-anchor="middle">• ROS 2 Action Servers</text>
+  <text x="620" y="145" class="label" text-anchor="middle">• Robot Control</text>
+
+  <!-- Emergency Stop -->
+  <rect x="750" y="80" width="100" height="80" class="safety" rx="10"/>
+  <text x="800" y="110" class="text" text-anchor="middle">Emergency Stop</text>
+  <text x="800" y="130" class="label" text-anchor="middle">• Hard Safety</text>
+  <text x="800" y="145" class="label" text-anchor="middle">• Human Override</text>
+
+  <!-- Environmental Perception -->
+  <rect x="100" y="200" width="180" height="80" class="monitoring" rx="10"/>
+  <text x="190" y="230" class="text" text-anchor="middle">Environmental Perception</text>
+  <text x="190" y="250" class="label" text-anchor="middle">• Obstacle Detection</text>
+  <text x="190" y="265" class="label" text-anchor="middle">• Dynamic Objects</text>
+
+  <!-- Safety Constraints -->
+  <rect x="320" y="200" width="200" height="80" class="safety" rx="10"/>
+  <text x="420" y="230" class="text" text-anchor="middle">Safety Constraints</text>
+  <text x="420" y="250" class="label" text-anchor="middle">• Joint Limits</text>
+  <text x="420" y="265" class="label" text-anchor="middle">• Workspace Boundaries</text>
+
+  <!-- Action Monitoring -->
+  <rect x="560" y="200" width="180" height="80" class="monitoring" rx="10"/>
+  <text x="650" y="230" class="text" text-anchor="middle">Action Monitoring</text>
+  <text x="650" y="250" class="label" text-anchor="middle">• Progress Tracking</text>
+  <text x="650" y="265" class="label" text-anchor="middle">• Anomaly Detection</text>
+
+  <!-- Failure Detection -->
+  <rect x="320" y="320" width="200" height="80" class="safety" rx="10"/>
+  <text x="420" y="350" class="text" text-anchor="middle">Failure Detection</text>
+  <text x="420" y="370" class="label" text-anchor="middle">• Execution Errors</text>
+  <text x="420" y="385" class="label" text-anchor="middle">• Safety Violations</text>
+
+  <!-- Recovery Actions -->
+  <rect x="560" y="320" width="180" height="80" class="execution" rx="10"/>
+  <text x="650" y="350" class="text" text-anchor="middle">Recovery Actions</text>
+  <text x="650" y="370" class="label" text-anchor="middle">• Safe Stop</text>
+  <text x="650" y="385" class="label" text-anchor="middle">• Retry/Alternative</text>
+
+  <!-- Human Oversight -->
+  <rect x="320" y="440" width="200" height="80" class="validation" rx="10"/>
+  <text x="420" y="470" class="text" text-anchor="middle">Human Oversight</text>
+  <text x="420" y="490" class="label" text-anchor="middle">• Intervention Points</text>
+  <text x="420" y="505" class="label" text-anchor="middle">• Status Monitoring</text>
+
+  <!-- Feedback Loop -->
+  <rect x="560" y="440" width="180" height="80" class="monitoring" rx="10"/>
+  <text x="650" y="470" class="text" text-anchor="middle">Feedback Loop</text>
+  <text x="650" y="490" class="label" text-anchor="middle">• Perception Updates</text>
+  <text x="650" y="505" class="label" text-anchor="middle">• Plan Adjustment</text>
+
+  <!-- Arrows -->
+  <line x1="230" y1="120" x2="280" y2="120" class="arrow"/>
+  <line x1="480" y1="120" x2="530" y2="120" class="arrow"/>
+  <line x1="710" y1="120" x2="750" y2="120" class="arrow"/>
+
+  <line x1="230" y1="240" x2="320" y2="240" class="arrow"/>
+  <line x1="520" y1="240" x2="560" y2="240" class="arrow"/>
+
+  <line x1="420" y1="280" x2="420" y2="320" class="arrow"/>
+  <line x1="650" y1="280" x2="650" y2="320" class="arrow"/>
+
+  <line x1="520" y1="360" x2="560" y2="360" class="arrow"/>
+  <line x1="420" y1="400" x2="420" y2="440" class="arrow"/>
+  <line x1="650" y1="400" x2="650" y2="440" class="arrow"/>
+
+  <!-- Safety Layers Visualization -->
+  <g transform="translate(100, 560)">
+    <text x="0" y="0" class="label" font-weight="bold">Safety Layers:</text>
+
+    <!-- Layer 1: Hardware Safety -->
+    <rect x="0" y="10" width="120" height="20" fill="#ffcdd2" stroke="#d32f2f" stroke-width="1"/>
+    <text x="60" y="25" class="label" text-anchor="middle">Hardware Safety</text>
+
+    <!-- Layer 2: ROS 2 Safety -->
+    <rect x="0" y="35" width="120" height="20" fill="#f8bbd0" stroke="#c2185b" stroke-width="1"/>
+    <text x="60" y="50" class="label" text-anchor="middle">ROS 2 Safety</text>
+
+    <!-- Layer 3: Action Validation -->
+    <rect x="0" y="60" width="120" height="20" fill="#e1bee7" stroke="#7b1fa2" stroke-width="1"/>
+    <text x="60" y="75" class="label" text-anchor="middle">Action Validation</text>
+
+    <!-- Layer 4: Monitoring -->
+    <rect x="0" y="85" width="120" height="20" fill="#c5cae9" stroke="#303f9f" stroke-width="1"/>
+    <text x="60" y="100" class="label" text-anchor="middle">Monitoring</text>
+
+    <!-- Layer 5: Human Oversight -->
+    <rect x="0" y="110" width="120" height="20" fill="#b3e5fc" stroke="#0288d1" stroke-width="1"/>
+    <text x="60" y="125" class="label" text-anchor="middle">Human Oversight</text>
+  </g>
+
+  <!-- Execution Flow Labels -->
+  <text x="140" y="60" class="label" text-anchor="middle" font-weight="bold">Input</text>
+  <text x="380" y="60" class="label" text-anchor="middle" font-weight="bold">Validation</text>
+  <text x="620" y="60" class="label" text-anchor="middle" font-weight="bold">Execution</text>
+  <text x="800" y="60" class="label" text-anchor="middle" font-weight="bold">Safety</text>
+
+  <!-- Legend -->
+  <rect x="50" y="650" width="800" height="40" fill="white" stroke="#ccc" rx="5"/>
+  <text x="100" y="670" class="label" font-weight="bold">Safe Execution Flow: Planned actions → Safety validation → Execution → Monitoring → Recovery</text>
+  <text x="100" y="685" class="label">• Multiple safety layers prevent unsafe actions</text>
+  <text x="400" y="685" class="label">• Continuous monitoring for anomaly detection</text>
+  <text x="700" y="685" class="label">• Human oversight and intervention capabilities</text>
+</svg>

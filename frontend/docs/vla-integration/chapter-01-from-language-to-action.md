@@ -9,6 +9,8 @@ title: "Chapter 1: From Language to Action"
 
 The Vision-Language-Action (VLA) paradigm represents a unified approach to embodied artificial intelligence where natural language commands are directly translated into physical robot actions through visual understanding of the environment. Unlike traditional robotics approaches that separate perception, planning, and control, VLA systems create direct pathways from high-level linguistic goals to low-level robotic behaviors, with visual context providing the essential grounding that connects abstract language to concrete physical actions.
 
+![VLA Architecture](/img/vla-diagrams/vla-architecture.svg)
+
 In VLA systems, language serves as the primary interface for specifying tasks, vision provides the environmental context and feedback, and action execution carries out the requested behaviors. This integration enables more natural human-robot interaction, as users can express goals in their native language without needing to understand the robot's internal state or control mechanisms. The visual component ensures that language references are properly grounded in the physical world, allowing the robot to understand spatial relationships, object properties, and environmental constraints.
 
 ## Mental Model

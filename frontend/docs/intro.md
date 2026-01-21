@@ -24,6 +24,12 @@ Begin your journey by understanding how robots communicate and coordinate throug
 ### Module 2: Digital Twin - Gazebo & Unity
 Advance to digital twin technologies where you'll master simulation environments using Gazebo for physics and sensor modeling, and Unity for visualization. Learn how to create virtual replicas of physical robots for safe, reproducible testing and development.
 
+### Module 3: Perception & Sensor Intelligence
+Develop expertise in converting raw sensor data into meaningful perception using camera, LiDAR, and other sensors. Learn about sensor fusion, vision processing, and how to integrate perception systems with ROS 2 for comprehensive environmental understanding.
+
+### Module 4: Vision-Language-Action (VLA) Integration
+Master the integration of Large Language Models with robotic perception and action, enabling humanoid robots to understand natural language commands and execute them safely. Learn how to create systems that process voice commands, perform cognitive task planning, ground language in visual context, and execute actions with safety validation.
+
 ## How to Use This Book
 
 Each chapter follows a consistent structure designed for optimal learning:
@@ -40,4 +46,4 @@ This book is designed for undergraduate and early-graduate students in Computer 
 
 ## Getting Started
 
-Begin with Module 1 to establish the foundational concepts of robotic communication systems, then progress to Module 2 where you'll apply these concepts in simulation environments. Each module builds upon the previous, creating a comprehensive understanding of Physical AI systems.
+Begin with Module 1 to establish the foundational concepts of robotic communication systems, then progress to Module 2 where you'll apply these concepts in simulation environments. Continue with Module 3 to develop perception and sensor intelligence capabilities, and complete your learning journey with Module 4 where you'll integrate vision, language, and action for complete autonomous humanoid systems. Each module builds upon the previous, creating a comprehensive understanding of Physical AI systems.

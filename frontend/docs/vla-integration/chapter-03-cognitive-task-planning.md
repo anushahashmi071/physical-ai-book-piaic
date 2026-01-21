@@ -9,6 +9,8 @@ title: "Chapter 3: Cognitive Task Planning"
 
 Cognitive task planning in Vision-Language-Action (VLA) systems involves translating high-level natural language goals into executable robotic action sequences using large language models (LLMs) as reasoning engines. This process goes beyond simple command mapping to include understanding task dependencies, handling ambiguous specifications, reasoning about object affordances, and adapting to environmental constraints. Cognitive planning bridges the gap between human intention expressed in natural language and the structured, low-level commands required by robotic systems.
 
+![Cognitive Planning Process](/img/vla-diagrams/cognitive-planning.svg)
+
 The cognitive planning system must decompose complex goals into primitive actions while considering spatial relationships, object properties, and task constraints. It integrates symbolic reasoning with neural pattern matching to handle both novel situations and learned behaviors. This dual approach allows for flexible task execution while maintaining the reliability required for safe robotic operation.
 
 ## Mental Model

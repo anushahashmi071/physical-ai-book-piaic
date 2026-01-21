@@ -11,32 +11,62 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Embodied Intelligence',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn how AI systems operate in the physical world through vision, language, and action integration.
+        Understand the principles of embodied cognition that connect neural networks to robotic behavior.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Simulation-First Approach',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Master robotics development through simulation environments before hardware deployment.
+        Test algorithms safely in Gazebo and Unity with perfect ground truth and reproducible scenarios.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'ROS 2 Integration',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Build on the Robot Operating System 2 framework for distributed robotics applications.
+        Connect perception, planning, and control systems through standardized communication patterns.
+      </>
+    ),
+  },
+  {
+    title: 'Vision-Language-Action Pipeline',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Understand how natural language commands flow through perception and reasoning to physical action.
+        Create humanoid robots that respond to human instructions with intelligent behavior.
+      </>
+    ),
+  },
+  {
+    title: 'Cognitive Task Planning',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Learn how Large Language Models decompose complex goals into executable robotic tasks.
+        Combine symbolic planning with neural reasoning for robust task execution.
+      </>
+    ),
+  },
+  {
+    title: 'Safe & Reliable Execution',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Implement safety constraints and validation mechanisms for trustworthy robotic systems.
+        Design feedback loops and error recovery for resilient autonomous operation.
       </>
     ),
   },

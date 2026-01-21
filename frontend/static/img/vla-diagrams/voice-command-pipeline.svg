@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <style>
+    .audio { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+    .processing { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .language { fill: #f3e5f5; stroke: #c2185b; stroke-width: 2; }
+    .output { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" text-anchor="middle" font-size="20">Voice-to-Command Processing Pipeline</text>
+
+  <!-- Audio Input -->
+  <rect x="50" y="80" width="150" height="100" class="audio" rx="10"/>
+  <text x="125" y="110" class="text" text-anchor="middle">Audio Input</text>
+  <text x="125" y="130" class="label" text-anchor="middle">• Microphone Array</text>
+  <text x="125" y="145" class="label" text-anchor="middle">• Sound Capture</text>
+  <text x="125" y="160" class="label" text-anchor="middle">• Noise Reduction</text>
+
+  <!-- ASR Processing -->
+  <rect x="250" y="80" width="200" height="100" class="processing" rx="10"/>
+  <text x="350" y="110" class="text" text-anchor="middle">Automatic Speech Recognition</text>
+  <text x="350" y="130" class="label" text-anchor="middle">• Whisper/DeepSpeech</text>
+  <text x="350" y="145" class="label" text-anchor="middle">• Text Conversion</text>
+  <text x="350" y="160" class="label" text-anchor="middle">• Confidence Scoring</text>
+
+  <!-- Language Understanding -->
+  <rect x="500" y="80" width="200" height="100" class="language" rx="10"/>
+  <text x="600" y="110" class="text" text-anchor="middle">Language Understanding</text>
+  <text x="600" y="130" class="label" text-anchor="middle">• Intent Classification</text>
+  <text x="600" y="145" class="label" text-anchor="middle">• Entity Extraction</text>
+  <text x="600" y="160" class="label" text-anchor="middle">• Context Resolution</text>
+
+  <!-- Command Output -->
+  <rect x="750" y="80" width="130" height="100" class="output" rx="10"/>
+  <text x="815" y="110" class="text" text-anchor="middle">Command Output</text>
+  <text x="815" y="130" class="label" text-anchor="middle">• Structured Task</text>
+  <text x="815" y="145" class="label" text-anchor="middle">• Action Parameters</text>
+  <text x="815" y="160" class="label" text-anchor="middle">• Execution Plan</text>
+
+  <!-- Voice Activity Detection -->
+  <rect x="250" y="220" width="150" height="80" class="processing" rx="10"/>
+  <text x="325" y="245" class="text" text-anchor="middle">Voice Activity Detection</text>
+  <text x="325" y="260" class="label" text-anchor="middle">• Silence Detection</text>
+  <text x="325" y="275" class="label" text-anchor="middle">• Wake Word Recognition</text>
+
+  <!-- Noise Filtering -->
+  <rect x="450" y="220" width="150" height="80" class="processing" rx="10"/>
+  <text x="525" y="245" class="text" text-anchor="middle">Noise Filtering</text>
+  <text x="525" y="260" class="label" text-anchor="middle">• Echo Cancellation</text>
+  <text x="525" y="275" class="label" text-anchor="middle">• Acoustic Modeling</text>
+
+  <!-- Disambiguation -->
+  <rect x="650" y="220" width="150" height="80" class="language" rx="10"/>
+  <text x="725" y="245" class="text" text-anchor="middle">Disambiguation</text>
+  <text x="725" y="260" class="label" text-anchor="middle">• Clarification Requests</text>
+  <text x="725" y="275" class="label" text-anchor="middle">• Context Resolution</text>
+
+  <!-- Confidence Validation -->
+  <rect x="500" y="350" width="200" height="80" class="output" rx="10"/>
+  <text x="600" y="375" class="text" text-anchor="middle">Confidence Validation</text>
+  <text x="600" y="390" class="label" text-anchor="middle">• Quality Assessment</text>
+  <text x="600" y="405" class="label" text-anchor="middle">• Reliability Checking</text>
+
+  <!-- Arrows -->
+  <line x1="200" y1="130" x2="250" y2="130" class="arrow"/>
+  <line x1="450" y1="130" x2="500" y2="130" class="arrow"/>
+  <line x1="700" y1="130" x2="750" y2="130" class="arrow"/>
+
+  <line x1="325" y1="180" x2="325" y2="220" class="arrow"/>
+  <line x1="400" y1="130" x2="450" y2="260" class="arrow"/>
+  <line x1="600" y1="180" x2="675" y2="220" class="arrow"/>
+
+  <line x1="525" y1="300" x2="600" y2="350" class="arrow"/>
+  <line x1="725" y1="300" x2="675" y2="350" class="arrow"/>
+
+  <!-- Audio Waveform Visualization -->
+  <g transform="translate(75, 220)">
+    <text x="0" y="0" class="label">Audio Waveform:</text>
+    <path d="M 0 20 Q 20 10, 40 20 T 80 20 T 120 20 T 160 20" stroke="#1976d2" fill="none" stroke-width="2"/>
+    <path d="M 0 30 Q 15 25, 30 30 T 60 30 T 90 30 T 120 30 T 150 30" stroke="#1976d2" fill="none" stroke-width="1"/>
+  </g>
+
+  <!-- Process Labels -->
+  <text x="125" y="60" class="label" text-anchor="middle" font-weight="bold">Input</text>
+  <text x="350" y="60" class="label" text-anchor="middle" font-weight="bold">Processing</text>
+  <text x="600" y="60" class="label" text-anchor="middle" font-weight="bold">Understanding</text>
+  <text x="815" y="60" class="label" text-anchor="middle" font-weight="bold">Output</text>
+
+  <!-- Legend -->
+  <rect x="50" y="500" width="800" height="80" fill="white" stroke="#ccc" rx="5"/>
+  <text x="100" y="525" class="label" font-weight="bold">Voice Command Pipeline: Raw audio → ASR → Language Understanding → Structured Commands</text>
+  <text x="100" y="540" class="label">• Audio preprocessing handles noise and voice activity detection</text>
+  <text x="100" y="555" class="label">• ASR converts speech to text with confidence scoring</text>
+  <text x="100" y="570" class="label">• Language understanding parses intent and resolves ambiguity</text>
+</svg>

@@ -9,6 +9,8 @@ title: "Chapter 2: Sensor Data Processing Pipelines"
 
 Sensor data processing pipelines are systematic sequences of operations that transform raw sensor measurements into meaningful perceptual information. Unlike simple data processing, perception pipelines must handle real-time constraints, uncertainty quantification, and the integration of multiple sensor modalities. These pipelines form the backbone of any perception system, connecting raw sensor data to higher-level cognitive functions.
 
+![Sensor Fusion Process](/img/perception-diagrams/sensor-fusion.svg)
+
 A well-designed pipeline balances computational efficiency with accuracy, handles sensor noise and uncertainty appropriately, and maintains the timing requirements necessary for real-time robotic operation. The pipeline architecture allows for modular development, testing, and optimization of individual processing steps while maintaining the overall system's integrity.
 
 ## Mental Model

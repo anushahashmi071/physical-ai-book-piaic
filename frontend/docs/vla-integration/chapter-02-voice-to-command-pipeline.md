@@ -9,6 +9,8 @@ title: "Chapter 2: Voice-to-Command Pipeline"
 
 The voice-to-command pipeline transforms spoken natural language into structured robotic commands that can be processed by AI reasoning systems. This pipeline encompasses automatic speech recognition (ASR) to convert audio to text, natural language processing to extract intent and entities, and command validation to ensure the request is both understood and executable. The pipeline must operate in real-time with sufficient accuracy to enable natural human-robot interaction while handling the inherent variability in human speech and environmental conditions.
 
+![Voice Command Pipeline](/img/vla-diagrams/voice-command-pipeline.svg)
+
 Unlike traditional command-line interfaces that require specific syntax, voice-to-command systems must handle natural language variations, disfluencies, and contextual ambiguities. The pipeline bridges the gap between human communication patterns and robotic action requirements, making robots more accessible to non-expert users. This capability is essential for humanoid robots that aim to operate in human environments where natural interaction is expected.
 
 ## Mental Model

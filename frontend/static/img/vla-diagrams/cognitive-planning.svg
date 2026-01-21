@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <style>
+    .planning { fill: #e8eaf6; stroke: #5c6bc0; stroke-width: 2; }
+    .reasoning { fill: #e1f5fe; stroke: #0288d1; stroke-width: 2; }
+    .symbolic { fill: #f1f8e9; stroke: #689f38; stroke-width: 2; }
+    .execution { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" text-anchor="middle" font-size="20">Cognitive Task Planning in VLA Systems</text>
+
+  <!-- Goal Input -->
+  <rect x="50" y="80" width="180" height="80" class="planning" rx="10"/>
+  <text x="140" y="110" class="text" text-anchor="middle">Goal Input</text>
+  <text x="140" y="130" class="label" text-anchor="middle">• Natural Language Commands</text>
+  <text x="140" y="145" class="label" text-anchor="middle">• High-Level Objectives</text>
+
+  <!-- LLM Reasoning -->
+  <rect x="280" y="80" width="200" height="80" class="reasoning" rx="10"/>
+  <text x="380" y="110" class="text" text-anchor="middle">LLM Reasoning</text>
+  <text x="380" y="130" class="label" text-anchor="middle">• Task Decomposition</text>
+  <text x="380" y="145" class="label" text-anchor="middle">• Context Understanding</text>
+
+  <!-- Symbolic Planning -->
+  <rect x="530" y="80" width="200" height="80" class="symbolic" rx="10"/>
+  <text x="630" y="110" class="text" text-anchor="middle">Symbolic Planning</text>
+  <text x="630" y="130" class="label" text-anchor="middle">• Action Sequencing</text>
+  <text x="630" y="145" class="label" text-anchor="middle">• Constraint Satisfaction</text>
+
+  <!-- Task Sequence Output -->
+  <rect x="780" y="80" width="100" height="80" class="execution" rx="10"/>
+  <text x="830" y="110" class="text" text-anchor="middle">Task Sequence</text>
+  <text x="830" y="130" class="label" text-anchor="middle">• Action Primitives</text>
+  <text x="830" y="145" class="label" text-anchor="middle">• Execution Plan</text>
+
+  <!-- Context Management -->
+  <rect x="100" y="200" width="200" height="100" class="planning" rx="10"/>
+  <text x="200" y="230" class="text" text-anchor="middle">Context Management</text>
+  <text x="200" y="250" class="label" text-anchor="middle">• World State</text>
+  <text x="200" y="265" class="label" text-anchor="middle">• Memory</text>
+  <text x="200" y="280" class="label" text-anchor="middle">• History</text>
+
+  <!-- Knowledge Base -->
+  <rect x="350" y="200" width="200" height="100" class="reasoning" rx="10"/>
+  <text x="450" y="230" class="text" text-anchor="middle">Knowledge Base</text>
+  <text x="450" y="250" class="label" text-anchor="middle">• Object Properties</text>
+  <text x="450" y="265" class="label" text-anchor="middle">• Spatial Relationships</text>
+  <text x="450" y="280" class="label" text-anchor="middle">• Affordances</text>
+
+  <!-- Action Primitives -->
+  <rect x="600" y="200" width="200" height="100" class="symbolic" rx="10"/>
+  <text x="700" y="230" class="text" text-anchor="middle">Action Primitives</text>
+  <text x="700" y="250" class="label" text-anchor="middle">• Navigation</text>
+  <text x="700" y="265" class="label" text-anchor="middle">• Manipulation</text>
+  <text x="700" y="280" class="label" text-anchor="middle">• Perception</text>
+
+  <!-- Planning Process -->
+  <rect x="200" y="350" width="500" height="120" class="planning" rx="10"/>
+  <text x="450" y="380" class="text" text-anchor="middle">Planning Process</text>
+  <text x="450" y="400" class="label" text-anchor="middle">• Decomposition: Complex goals → Simple actions</text>
+  <text x="450" y="415" class="label" text-anchor="middle">• Sequencing: Order actions logically</text>
+  <text x="450" y="430" class="label" text-anchor="middle">• Validation: Check feasibility and safety</text>
+  <text x="450" y="445" class="label" text-anchor="middle">• Optimization: Minimize cost/resources</text>
+
+  <!-- Execution Validation -->
+  <rect x="300" y="520" width="300" height="100" class="execution" rx="10"/>
+  <text x="450" y="550" class="text" text-anchor="middle">Execution Validation</text>
+  <text x="450" y="570" class="label" text-anchor="middle">• Safety Constraints</text>
+  <text x="450" y="585" class="label" text-anchor="middle">• Feasibility Check</text>
+  <text x="450" y="600" class="label" text-anchor="middle">• Resource Availability</text>
+
+  <!-- Arrows -->
+  <line x1="230" y1="120" x2="280" y2="120" class="arrow"/>
+  <line x1="480" y1="120" x2="530" y2="120" class="arrow"/>
+  <line x1="730" y1="120" x2="780" y2="120" class="arrow"/>
+
+  <line x1="200" y1="160" x2="200" y2="200" class="arrow"/>
+  <line x1="380" y1="160" x2="450" y2="200" class="arrow"/>
+  <line x1="630" y1="160" x2="700" y2="200" class="arrow"/>
+
+  <line x1="200" y1="300" x2="450" y2="350" class="arrow"/>
+  <line x1="450" y1="300" x2="450" y2="350" class="arrow"/>
+  <line x1="700" y1="300" x2="450" y2="350" class="arrow"/>
+
+  <line x1="450" y1="470" x2="450" y2="520" class="arrow"/>
+
+  <!-- Cognitive Process Labels -->
+  <text x="140" y="60" class="label" text-anchor="middle" font-weight="bold">Goal Input</text>
+  <text x="380" y="60" class="label" text-anchor="middle" font-weight="bold">Cognitive Reasoning</text>
+  <text x="630" y="60" class="label" text-anchor="middle" font-weight="bold">Symbolic Planning</text>
+  <text x="830" y="60" class="label" text-anchor="middle" font-weight="bold">Action Output</text>
+
+  <!-- Process Flow Label -->
+  <text x="450" y="650" class="label" text-anchor="middle" font-weight="bold">Cognitive Planning Flow: High-level goals → LLM reasoning → Symbolic planning → Executable actions</text>
+
+  <!-- Legend -->
+  <rect x="50" y="670" width="800" height="20" fill="white" stroke="#ccc" rx="3"/>
+  <text x="100" y="685" class="label">Cognitive Planning: Natural language goals are decomposed by LLMs and converted to executable robotic actions through symbolic planning</text>
+</svg>

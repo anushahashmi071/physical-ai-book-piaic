@@ -9,6 +9,8 @@ title: "Chapter 5: Safe Action Execution"
 
 Safe action execution in Vision-Language-Action (VLA) systems encompasses the critical processes that ensure robotic actions derived from natural language commands are executed safely and reliably. This involves multiple layers of validation, monitoring, and safety constraints that prevent harmful or unsafe behaviors while maintaining the system's ability to accomplish user goals. Safe execution bridges the gap between high-level language understanding and low-level motor control, ensuring that every action commanded by the system respects safety constraints and environmental limitations.
 
+![Safe Action Execution](/img/vla-diagrams/safe-action-execution.svg)
+
 The safe execution system must validate planned actions against multiple safety criteria before execution, monitor the environment during execution for unexpected changes, and implement graceful recovery mechanisms when failures occur. This multi-layered approach ensures that even if the language understanding or task planning components produce suboptimal results, the execution system maintains safety boundaries that prevent harm to people, property, or the robot itself.
 
 ## Mental Model

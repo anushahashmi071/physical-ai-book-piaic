@@ -9,6 +9,8 @@ title: "Chapter 6: Capstone - Autonomous Humanoid"
 
 The capstone chapter integrates all VLA components into a complete autonomous humanoid system that demonstrates natural language interaction, visual perception, and safe physical action execution. This end-to-end system showcases how vision, language, and action components work together to enable a humanoid robot to understand complex natural language commands, perceive its environment, plan appropriate responses, and execute them safely. The capstone system demonstrates the full pipeline from human communication to robotic behavior while maintaining safety and reliability.
 
+![Capstone Integration](/img/vla-diagrams/capstone-integration.svg)
+
 The autonomous humanoid system represents the culmination of the VLA approach, where natural language commands flow through cognitive processing, visual grounding, task planning, and safe execution to produce meaningful robotic behaviors. This integration demonstrates how the individual components (voice processing, language understanding, vision systems, and safe action execution) combine to create emergent capabilities that exceed the sum of their parts.
 
 ## Mental Model

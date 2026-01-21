@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <style>
+    .sensor { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+    .processing { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+    .fusion { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .ros { fill: #fce4ec; stroke: #c2185b; stroke-width: 2; }
+    .ai { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="40" class="text" text-anchor="middle" font-size="20">Perception & Sensor Intelligence Architecture</text>
+
+  <!-- Sensor Layer -->
+  <rect x="50" y="100" width="150" height="100" class="sensor" rx="10"/>
+  <text x="125" y="130" class="text" text-anchor="middle">Camera</text>
+  <text x="125" y="150" class="label" text-anchor="middle">Image, Video</text>
+  <text x="125" y="170" class="label" text-anchor="middle">RGB-D, Stereo</text>
+
+  <rect x="250" y="100" width="150" height="100" class="sensor" rx="10"/>
+  <text x="325" y="130" class="text" text-anchor="middle">LiDAR</text>
+  <text x="325" y="150" class="label" text-anchor="middle">Point Clouds</text>
+  <text x="325" y="170" class="label" text-anchor="middle">3D Spatial Data</text>
+
+  <rect x="450" y="100" width="150" height="100" class="sensor" rx="10"/>
+  <text x="525" y="130" class="text" text-anchor="middle">IMU</text>
+  <text x="525" y="150" class="label" text-anchor="middle">Acceleration</text>
+  <text x="525" y="170" class="label" text-anchor="middle">Orientation</text>
+
+  <rect x="650" y="100" width="150" height="100" class="sensor" rx="10"/>
+  <text x="725" y="130" class="text" text-anchor="middle">Other</text>
+  <text x="725" y="150" class="label" text-anchor="middle">GPS, Force, etc.</text>
+  <text x="725" y="170" class="label" text-anchor="middle">Multi-modal</text>
+
+  <!-- Processing Layer -->
+  <rect x="100" y="250" width="200" height="100" class="processing" rx="10"/>
+  <text x="200" y="280" class="text" text-anchor="middle">Vision Processing</text>
+  <text x="200" y="300" class="label" text-anchor="middle">Feature Detection</text>
+  <text x="200" y="320" class="label" text-anchor="middle">Object Recognition</text>
+
+  <rect x="350" y="250" width="200" height="100" class="processing" rx="10"/>
+  <text x="450" y="280" class="text" text-anchor="middle">3D Processing</text>
+  <text x="450" y="300" class="label" text-anchor="middle">Point Cloud Analysis</text>
+  <text x="450" y="320" class="label" text-anchor="middle">Surface Reconstruction</text>
+
+  <rect x="600" y="250" width="200" height="100" class="processing" rx="10"/>
+  <text x="700" y="280" class="text" text-anchor="middle">State Estimation</text>
+  <text x="700" y="300" class="label" text-anchor="middle">Kalman Filters</text>
+  <text x="700" y="320" class="label" text-anchor="middle">Sensor Fusion</text>
+
+  <!-- AI/ML Layer -->
+  <rect x="200" y="400" width="300" height="100" class="ai" rx="10"/>
+  <text x="350" y="430" class="text" text-anchor="middle">Deep Learning</text>
+  <text x="350" y="450" class="label" text-anchor="middle">CNNs, Transformers</text>
+  <text x="350" y="470" class="label" text-anchor="middle">Semantic Segmentation</text>
+
+  <rect x="550" y="400" width="250" height="100" class="ai" rx="10"/>
+  <text x="675" y="430" class="text" text-anchor="middle">Classical AI</text>
+  <text x="675" y="450" class="label" text-anchor="middle">SLAM, Localization</text>
+  <text x="675" y="470" class="label" text-anchor="middle">Planning Algorithms</text>
+
+  <!-- ROS 2 Integration -->
+  <rect x="300" y="550" width="400" height="100" class="ros" rx="10"/>
+  <text x="500" y="580" class="text" text-anchor="middle">ROS 2 Integration</text>
+  <text x="500" y="600" class="label" text-anchor="middle">sensor_msgs, vision_msgs</text>
+  <text x="500" y="620" class="label" text-anchor="middle">TF, Navigation, Control</text>
+
+  <!-- Arrows showing data flow -->
+  <line x1="125" y1="200" x2="200" y2="250" class="arrow"/>
+  <line x1="325" y1="200" x2="450" y2="250" class="arrow"/>
+  <line x1="525" y1="200" x2="700" y2="250" class="arrow"/>
+  <line x1="725" y1="200" x2="700" y2="250" class="arrow"/>
+
+  <line x1="200" y1="350" x2="350" y2="400" class="arrow"/>
+  <line x1="450" y1="350" x2="350" y2="400" class="arrow"/>
+  <line x1="700" y1="350" x2="675" y2="400" class="arrow"/>
+
+  <line x1="350" y1="500" x2="500" y2="550" class="arrow"/>
+  <line x1="675" y1="500" x2="500" y2="550" class="arrow"/>
+
+  <!-- Legend -->
+  <rect x="50" y="650" width="900" height="40" fill="white" stroke="#ccc" rx="5"/>
+  <text x="100" y="675" class="label">Sensing → Processing → Intelligence → ROS 2 Integration: Complete perception pipeline from raw sensors to actionable intelligence</text>
+</svg>

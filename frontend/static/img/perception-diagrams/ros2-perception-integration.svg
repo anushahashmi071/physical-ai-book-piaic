@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <style>
+    .node { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+    .topic { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+    .service { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .action { fill: #fce4ec; stroke: #c2185b; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" text-anchor="middle" font-size="20">ROS 2 Perception Integration</text>
+
+  <!-- Sensor Nodes -->
+  <rect x="50" y="80" width="150" height="80" class="node" rx="10"/>
+  <text x="125" y="110" class="text" text-anchor="middle">Camera Node</text>
+  <text x="125" y="130" class="label" text-anchor="middle">sensor_msgs/Image</text>
+  <text x="125" y="145" class="label" text-anchor="middle">image_raw topic</text>
+
+  <rect x="50" y="200" width="150" height="80" class="node" rx="10"/>
+  <text x="125" y="230" class="text" text-anchor="middle">LiDAR Node</text>
+  <text x="125" y="250" class="label" text-anchor="middle">sensor_msgs/PointCloud2</text>
+  <text x="125" y="265" class="label" text-anchor="middle">scan topic</text>
+
+  <rect x="50" y="320" width="150" height="80" class="node" rx="10"/>
+  <text x="125" y="350" class="text" text-anchor="middle">IMU Node</text>
+  <text x="125" y="370" class="label" text-anchor="middle">sensor_msgs/Imu</text>
+  <text x="125" y="385" class="label" text-anchor="middle">imu_data topic</text>
+
+  <!-- Perception Processing Nodes -->
+  <rect x="350" y="80" width="200" height="80" class="node" rx="10"/>
+  <text x="450" y="110" class="text" text-anchor="middle">Object Detection</text>
+  <text x="450" y="130" class="label" text-anchor="middle">vision_msgs/Detection2DArray</text>
+  <text x="450" y="145" class="label" text-anchor="middle">object_detections topic</text>
+
+  <rect x="350" y="200" width="200" height="80" class="node" rx="10"/>
+  <text x="450" y="230" class="text" text-anchor="middle">SLAM Node</text>
+  <text x="450" y="250" class="label" text-anchor="middle">nav_msgs/OccupancyGrid</text>
+  <text x="450" y="265" class="label" text-anchor="middle">map topic</text>
+
+  <rect x="350" y="320" width="200" height="80" class="node" rx="10"/>
+  <text x="450" y="350" class="text" text-anchor="middle">Sensor Fusion</text>
+  <text x="450" y="370" class="label" text-anchor="middle">geometry_msgs/PoseWithCovariance</text>
+  <text x="450" y="385" class="label" text-anchor="middle">fused_pose topic</text>
+
+  <!-- AI/LLM Integration -->
+  <rect x="650" y="200" width="200" height="80" class="node" rx="10"/>
+  <text x="750" y="230" class="text" text-anchor="middle">VLA Agent</text>
+  <text x="750" y="250" class="label" text-anchor="middle">std_msgs/String</text>
+  <text x="750" y="265" class="label" text-anchor="middle">natural_language topic</text>
+
+  <!-- TF Tree -->
+  <rect x="650" y="350" width="200" height="60" class="service" rx="10"/>
+  <text x="750" y="380" class="text" text-anchor="middle">TF Tree</text>
+  <text x="750" y="395" class="label" text-anchor="middle">Transform relationships</text>
+
+  <!-- Topics -->
+  <rect x="220" y="100" width="110" height="30" class="topic" rx="5"/>
+  <text x="275" y="120" class="label" text-anchor="middle">/camera/image_raw</text>
+
+  <rect x="220" y="220" width="110" height="30" class="topic" rx="5"/>
+  <text x="275" y="240" class="label" text-anchor="middle">/lidar/points</text>
+
+  <rect x="220" y="340" width="110" height="30" class="topic" rx="5"/>
+  <text x="275" y="360" class="label" text-anchor="middle">/imu/data</text>
+
+  <!-- Processing Topics -->
+  <rect x="570" y="100" width="110" height="30" class="topic" rx="5"/>
+  <text x="625" y="120" class="label" text-anchor="middle">/detections</text>
+
+  <rect x="570" y="220" width="110" height="30" class="topic" rx="5"/>
+  <text x="625" y="240" class="label" text-anchor="middle">/map</text>
+
+  <rect x="570" y="340" width="110" height="30" class="topic" rx="5"/>
+  <text x="625" y="360" class="label" text-anchor="middle">/fused_pose</text>
+
+  <!-- Arrows showing data flow -->
+  <line x1="200" y1="120" x2="350" y2="120" class="arrow"/>
+  <line x1="200" y1="240" x2="350" y2="240" class="arrow"/>
+  <line x1="200" y1="360" x2="350" y2="360" class="arrow"/>
+
+  <line x1="550" y1="120" x2="650" y2="240" class="arrow"/>
+  <line x1="550" y1="240" x2="650" y2="240" class="arrow"/>
+  <line x1="550" y1="360" x2="650" y2="240" class="arrow"/>
+
+  <line x1="650" y1="240" x2="750" y2="380" class="arrow"/>
+  <line x1="750" y1="380" x2="650" y2="380" class="arrow"/>
+
+  <!-- Legend -->
+  <rect x="50" y="600" width="800" height="80" fill="white" stroke="#ccc" rx="5"/>
+  <text x="100" y="625" class="label" font-weight="bold">ROS 2 Perception Integration:</text>
+  <text x="100" y="640" class="label">• Sensor nodes publish raw data to topics</text>
+  <text x="100" y="655" class="label">• Perception nodes subscribe and process sensor data</text>
+  <text x="100" y="670" class="label">• AI agents consume processed perception for decision making</text>
+</svg>

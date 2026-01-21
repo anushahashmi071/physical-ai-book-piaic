@@ -9,6 +9,8 @@ title: "Chapter 4: Vision Grounding"
 
 Vision grounding is the process of connecting language references to visual entities in the environment, enabling robots to understand which specific objects, locations, or spatial relationships a user is referring to when issuing commands. This connection between linguistic expressions and visual perception is fundamental to natural human-robot interaction, as natural language is inherently grounded in visual experience. Vision grounding allows robots to interpret ambiguous references like "that object" or "the cup on the left" by analyzing the visual scene and identifying the most likely referents.
 
+![Vision Grounding Process](/img/vla-diagrams/vision-grounding.svg)
+
 The grounding process involves multiple components working together: object detection and recognition to identify entities in the visual scene, spatial reasoning to understand relationships and positions, and language understanding to interpret the linguistic references. The system must handle various challenges including partial observability, visual similarity between objects, spatial ambiguity, and the need to maintain temporal consistency as objects move or the robot's viewpoint changes.
 
 ## Mental Model

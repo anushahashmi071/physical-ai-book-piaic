@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <style>
+    .camera { fill: #e1f5fe; stroke: #0288d1; stroke-width: 2; }
+    .processing { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+    .output { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" text-anchor="middle" font-size="20">Camera Perception Pipeline</text>
+
+  <!-- Camera Input -->
+  <rect x="50" y="80" width="200" height="120" class="camera" rx="10"/>
+  <text x="150" y="110" class="text" text-anchor="middle">Camera Input</text>
+  <text x="150" y="130" class="label" text-anchor="middle">RGB Image</text>
+  <text x="150" y="150" class="label" text-anchor="middle">Video Stream</text>
+  <text x="150" y="170" class="label" text-anchor="middle">Resolution: 640x480+</text>
+
+  <!-- Preprocessing -->
+  <rect x="325" y="80" width="250" height="120" class="processing" rx="10"/>
+  <text x="450" y="110" class="text" text-anchor="middle">Preprocessing</text>
+  <text x="450" y="130" class="label" text-anchor="middle">• Denoising</text>
+  <text x="450" y="145" class="label" text-anchor="middle">• Distortion Correction</text>
+  <text x="450" y="160" class="label" text-anchor="middle">• Brightness/Contrast</text>
+  <text x="450" y="175" class="label" text-anchor="middle">• Color Space Conversion</text>
+
+  <!-- Feature Extraction -->
+  <rect x="325" y="250" width="250" height="120" class="processing" rx="10"/>
+  <text x="450" y="280" class="text" text-anchor="middle">Feature Extraction</text>
+  <text x="450" y="300" class="label" text-anchor="middle">• Edge Detection</text>
+  <text x="450" y="315" class="label" text-anchor="middle">• Corner Detection</text>
+  <text x="450" y="330" class="label" text-anchor="middle">• Blob Detection</text>
+  <text x="450" y="345" class="label" text-anchor="middle">• Keypoint Extraction</text>
+
+  <!-- Object Recognition -->
+  <rect x="325" y="420" width="250" height="120" class="processing" rx="10"/>
+  <text x="450" y="450" class="text" text-anchor="middle">Object Recognition</text>
+  <text x="450" y="470" class="label" text-anchor="middle">• Template Matching</text>
+  <text x="450" y="485" class="label" text-anchor="middle">• CNN Classification</text>
+  <text x="450" y="500" class="label" text-anchor="middle">• Object Detection</text>
+  <text x="450" y="515" class="label" text-anchor="middle">• Semantic Segmentation</text>
+
+  <!-- Perception Output -->
+  <rect x="650" y="250" width="200" height="120" class="output" rx="10"/>
+  <text x="750" y="280" class="text" text-anchor="middle">Perception Output</text>
+  <text x="750" y="300" class="label" text-anchor="middle">• Detected Objects</text>
+  <text x="750" y="315" class="label" text-anchor="middle">• Object Properties</text>
+  <text x="750" y="330" class="label" text-anchor="middle">• Spatial Relations</text>
+  <text x="750" y="345" class="label" text-anchor="middle">• Confidence Scores</text>
+
+  <!-- Scene Understanding -->
+  <rect x="650" y="420" width="200" height="120" class="output" rx="10"/>
+  <text x="750" y="450" class="text" text-anchor="middle">Scene Understanding</text>
+  <text x="750" y="470" class="label" text-anchor="middle">• Layout Analysis</text>
+  <text x="750" y="485" class="label" text-anchor="middle">• Context Recognition</text>
+  <text x="750" y="500" class="label" text-anchor="middle">• Activity Recognition</text>
+  <text x="750" y="515" class="label" text-anchor="middle">• Behavioral Analysis</text>
+
+  <!-- Arrows -->
+  <line x1="250" y1="140" x2="325" y2="140" class="arrow"/>
+  <line x1="450" y1="200" x2="450" y2="250" class="arrow"/>
+  <line x1="450" y1="370" x2="450" y2="420" class="arrow"/>
+  <line x1="575" y1="310" x2="650" y2="310" class="arrow"/>
+  <line x1="575" y1="480" x2="650" y2="480" class="arrow"/>
+
+  <!-- Camera Icon -->
+  <circle cx="100" cy="120" r="20" fill="#bbdefb" stroke="#0277bd" stroke-width="2"/>
+  <circle cx="100" cy="120" r="10" fill="#0277bd"/>
+  <text x="100" y="165" class="label" text-anchor="middle">Lens</text>
+
+  <!-- Processing Icons -->
+  <circle cx="375" cy="120" r="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="375" y="125" class="text" font-size="12" text-anchor="middle">P</text>
+
+  <circle cx="375" cy="290" r="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="375" y="295" class="text" font-size="12" text-anchor="middle">F</text>
+
+  <circle cx="375" cy="460" r="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="375" y="465" class="text" font-size="12" text-anchor="middle">O</text>
+
+  <!-- Output Icons -->
+  <circle cx="700" cy="290" r="15" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/>
+  <text x="700" y="295" class="text" font-size="12" text-anchor="middle">P</text>
+
+  <circle cx="700" cy="460" r="15" fill="#ffe0b2" stroke="#ef6c00" stroke-width="2"/>
+  <text x="700" y="465" class="text" font-size="12" text-anchor="middle">S</text>
+
+  <!-- Legend -->
+  <rect x="50" y="650" width="800" height="40" fill="white" stroke="#ccc" rx="5"/>
+  <text x="100" y="675" class="label">Camera Pipeline: Raw image → Preprocessing → Feature Extraction → Object Recognition → Scene Understanding</text>
+</svg>

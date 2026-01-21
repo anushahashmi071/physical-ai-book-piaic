@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <style>
+    .simulation { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+    .testing { fill: #f1f8e9; stroke: #689f38; stroke-width: 2; }
+    .validation { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" text-anchor="middle" font-size="20">Simulation-Based Perception Testing</text>
+
+  <!-- Simulation Environment -->
+  <rect x="50" y="80" width="250" height="200" class="simulation" rx="10"/>
+  <text x="175" y="110" class="text" text-anchor="middle">Gazebo Simulation</text>
+  <text x="175" y="130" class="label" text-anchor="middle">• Physics Engine</text>
+  <text x="175" y="145" class="label" text-anchor="middle">• Sensor Models</text>
+  <text x="175" y="160" class="label" text-anchor="middle">• Environment Models</text>
+  <text x="175" y="175" class="label" text-anchor="middle">• Robot Models</text>
+  <text x="175" y="190" class="label" text-anchor="middle">• Ground Truth</text>
+
+  <!-- Perception System -->
+  <rect x="500" y="80" width="250" height="200" class="node" rx="10"/>
+  <text x="625" y="110" class="text" text-anchor="middle">Perception System</text>
+  <text x="625" y="130" class="label" text-anchor="middle">• Object Detection</text>
+  <text x="625" y="145" class="label" text-anchor="middle">• SLAM Processing</text>
+  <text x="625" y="160" class="label" text-anchor="middle">• Sensor Fusion</text>
+  <text x="625" y="175" class="label" text-anchor="middle">• Scene Understanding</text>
+  <text x="625" y="190" class="label" text-anchor="middle">• AI Processing</text>
+
+  <!-- Testing Framework -->
+  <rect x="50" y="350" width="250" height="150" class="testing" rx="10"/>
+  <text x="175" y="380" class="text" text-anchor="middle">Testing Framework</text>
+  <text x="175" y="400" class="label" text-anchor="middle">• Test Scenarios</text>
+  <text x="175" y="415" class="label" text-anchor="middle">• Performance Metrics</text>
+  <text x="175" y="430" class="label" text-anchor="middle">• Accuracy Validation</text>
+  <text x="175" y="445" class="label" text-anchor="middle">• Safety Checks</text>
+
+  <!-- Validation System -->
+  <rect x="500" y="350" width="250" height="150" class="validation" rx="10"/>
+  <text x="625" y="380" class="text" text-anchor="middle">Validation System</text>
+  <text x="625" y="400" class="label" text-anchor="middle">• Ground Truth Comparison</text>
+  <text x="625" y="415" class="label" text-anchor="middle">• Accuracy Metrics</text>
+  <text x="625" y="430" class="label" text-anchor="middle">• Performance Benchmarks</text>
+  <text x="625" y="445" class="label" text-anchor="middle">• Sim-to-Real Gap Analysis</text>
+
+  <!-- Results Dashboard -->
+  <rect x="275" y="550" width="350" height="100" class="output" rx="10"/>
+  <text x="450" y="580" class="text" text-anchor="middle">Results Dashboard</text>
+  <text x="450" y="600" class="label" text-anchor="middle">• Test Reports</text>
+  <text x="450" y="615" class="label" text-anchor="middle">• Performance Analytics</text>
+
+  <!-- Arrows showing data flow -->
+  <line x1="300" y1="180" x2="500" y2="180" class="arrow"/>
+  <text x="400" y="170" class="label" text-anchor="middle">Simulated Sensor Data</text>
+
+  <line x1="625" y1="280" x2="625" y2="350" class="arrow"/>
+  <text x="640" y="320" class="label" text-anchor="start">Perception Results</text>
+
+  <line x1="300" y1="420" x2="500" y2="420" class="arrow"/>
+  <text x="400" y="410" class="label" text-anchor="middle">Test Commands</text>
+
+  <line x1="300" y1="590" x2="275" y2="430" class="arrow"/>
+  <line x1="625" y1="590" x2="650" y2="500" class="arrow"/>
+  <text x="660" y="560" class="label" text-anchor="start">Validation Feedback</text>
+
+  <!-- Simulation Components -->
+  <circle cx="100" cy="120" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="100" y="125" class="text" font-size="10" text-anchor="middle">Env</text>
+
+  <circle cx="150" cy="120" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="150" y="125" class="text" font-size="10" text-anchor="middle">Rob</text>
+
+  <circle cx="200" cy="120" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="125" class="text" font-size="10" text-anchor="middle">Sen</text>
+
+  <circle cx="250" cy="120" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="250" y="125" class="text" font-size="10" text-anchor="middle">GT</text>
+
+  <!-- Perception Components -->
+  <circle cx="550" cy="120" r="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="550" y="125" class="text" font-size="10" text-anchor="middle">Vis</text>
+
+  <circle cx="600" cy="120" r="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="600" y="125" class="text" font-size="10" text-anchor="middle">3D</text>
+
+  <circle cx="650" cy="120" r="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="650" y="125" class="text" font-size="10" text-anchor="middle">AI</text>
+
+  <circle cx="700" cy="120" r="15" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="700" y="125" class="text" font-size="10" text-anchor="middle">Fus</text>
+
+  <!-- Legend -->
+  <rect x="50" y="670" width="800" height="20" fill="white" stroke="#ccc" rx="3"/>
+  <text x="100" y="685" class="label">Simulation-First Testing: Develop and validate perception systems in safe, reproducible virtual environments before hardware deployment</text>
+</svg>

@@ -9,6 +9,8 @@ title: "Chapter 5: Sensor Fusion Fundamentals"
 
 Sensor fusion is the process of combining information from multiple sensors to produce more accurate, reliable, and comprehensive perception than could be achieved with any single sensor alone. Rather than simply aggregating raw sensor data, sensor fusion integrates information at different levels—from raw signals to high-level concepts—to create a unified understanding of the environment. This approach compensates for individual sensor limitations while leveraging their complementary strengths.
 
+![Sensor Fusion Process](/img/perception-diagrams/sensor-fusion.svg)
+
 Sensor fusion is critical for robotic systems because no single sensor can provide complete environmental information under all conditions. Cameras excel at recognizing visual features but struggle in poor lighting; LiDAR provides precise distance measurements but lacks color information; IMUs provide motion data but drift over time. By combining these complementary sensors, robots can achieve robust perception across diverse scenarios.
 
 ## Mental Model

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <style>
+    .sensor { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+    .fusion { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+    .output { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+    .text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" class="text" text-anchor="middle" font-size="20">Sensor Fusion Process</text>
+
+  <!-- Individual Sensors -->
+  <rect x="80" y="100" width="120" height="80" class="sensor" rx="10"/>
+  <text x="140" y="130" class="text" text-anchor="middle">Camera</text>
+  <text x="140" y="150" class="label" text-anchor="middle">Visual Data</text>
+  <text x="140" y="170" class="label" text-anchor="middle">2D/3D Features</text>
+
+  <rect x="250" y="100" width="120" height="80" class="sensor" rx="10"/>
+  <text x="310" y="130" class="text" text-anchor="middle">LiDAR</text>
+  <text x="310" y="150" class="label" text-anchor="middle">3D Points</text>
+  <text x="310" y="170" class="label" text-anchor="middle">Spatial Data</text>
+
+  <rect x="420" y="100" width="120" height="80" class="sensor" rx="10"/>
+  <text x="480" y="130" class="text" text-anchor="middle">IMU</text>
+  <text x="480" y="150" class="label" text-anchor="middle">Inertial</text>
+  <text x="480" y="170" class="label" text-anchor="middle">Motion Data</text>
+
+  <rect x="590" y="100" width="120" height="80" class="sensor" rx="10"/>
+  <text x="650" y="130" class="text" text-anchor="middle">Other</text>
+  <text x="650" y="150" class="label" text-anchor="middle">Multi-sensor</text>
+  <text x="650" y="170" class="label" text-anchor="middle">Data Types</text>
+
+  <!-- Fusion Levels -->
+  <rect x="150" y="250" width="150" height="80" class="fusion" rx="10"/>
+  <text x="225" y="280" class="text" text-anchor="middle">Signal Level</text>
+  <text x="225" y="300" class="label" text-anchor="middle">Raw Data Fusion</text>
+  <text x="225" y="320" class="label" text-anchor="middle">Before Processing</text>
+
+  <rect x="350" y="250" width="150" height="80" class="fusion" rx="10"/>
+  <text x="425" y="280" class="text" text-anchor="middle">Feature Level</text>
+  <text x="425" y="300" class="label" text-anchor="middle">Feature Combination</text>
+  <text x="425" y="320" class="label" text-anchor="middle">After Processing</text>
+
+  <rect x="550" y="250" width="150" height="80" class="fusion" rx="10"/>
+  <text x="625" y="280" class="text" text-anchor="middle">Decision Level</text>
+  <text x="625" y="300" class="label" text-anchor="middle">Decision Fusion</text>
+  <text x="625" y="320" class="label" text-anchor="middle">Final Interpretation</text>
+
+  <!-- Fused Output -->
+  <rect x="350" y="400" width="200" height="80" class="output" rx="10"/>
+  <text x="450" y="430" class="text" text-anchor="middle">Fused Perception</text>
+  <text x="450" y="450" class="label" text-anchor="middle">Enhanced Understanding</text>
+  <text x="450" y="470" class="label" text-anchor="middle">Reduced Uncertainty</text>
+
+  <!-- Arrows -->
+  <line x1="140" y1="180" x2="225" y2="250" class="arrow"/>
+  <line x1="310" y1="180" x2="425" y2="250" class="arrow"/>
+  <line x1="480" y1="180" x2="425" y2="250" class="arrow"/>
+  <line x1="650" y1="180" x2="625" y2="250" class="arrow"/>
+
+  <line x1="225" y1="330" x2="450" y2="400" class="arrow"/>
+  <line x1="425" y1="330" x2="450" y2="400" class="arrow"/>
+  <line x1="625" y1="330" x2="450" y2="400" class="arrow"/>
+
+  <!-- Fusion Process Labels -->
+  <text x="100" y="230" class="label" font-weight="bold">Sensor Inputs</text>
+  <text x="300" y="230" class="label" font-weight="bold">Fusion Levels</text>
+  <text x="400" y="380" class="label" font-weight="bold">Fused Output</text>
+
+  <!-- Process Description -->
+  <text x="450" y="510" class="label" text-anchor="middle">Sensor fusion combines multiple sensor inputs to create more accurate, reliable, and comprehensive</text>
+  <text x="450" y="530" class="label" text-anchor="middle">perception than any single sensor could provide alone.</text>
+
+  <!-- Benefits -->
+  <rect x="100" y="550" width="700" height="40" fill="white" stroke="#ccc" rx="5"/>
+  <text x="120" y="570" class="label">Benefits: Improved accuracy, Reduced uncertainty, Increased reliability, Enhanced robustness, Fault tolerance</text>
+</svg>

@@ -9,6 +9,8 @@ title: "Chapter 7: Simulation-Based Perception Testing"
 
 Simulation-based perception testing is the practice of developing, validating, and refining perception algorithms in virtual environments before deploying to physical systems. This approach allows roboticists to conduct extensive testing of perception systems under controlled conditions, with access to ground truth information, and without the risks and costs associated with physical hardware. Simulation testing enables the validation of perception reliability, robustness, and accuracy before real-world deployment.
 
+![Simulation Testing Framework](/img/perception-diagrams/simulation-testing.svg)
+
 The simulation-first approach to perception testing provides several advantages: controlled experimental conditions, perfect ground truth for validation, safety from hardware damage, and reproducible scenarios for debugging. However, it also presents challenges related to the "reality gap" - the difference between simulated and real sensor data that can affect algorithm performance when transferred to physical systems.
 
 ## Mental Model

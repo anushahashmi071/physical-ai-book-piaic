@@ -9,6 +9,8 @@ title: "Chapter 1: Perception vs Sensing Fundamentals"
 
 Sensing and perception are two fundamental but distinct concepts in robotics that are often confused. Sensing refers to the acquisition of raw data from the environment through physical sensors, while perception involves the interpretation of this data to extract meaningful information about the world. Sensing is the process of measuring physical quantities (light intensity, distance, acceleration), while perception is the cognitive process of making sense of these measurements to understand the environment.
 
+![Perception Architecture](/img/perception-diagrams/perception-architecture.svg)
+
 Think of sensing as the "eyes" of the robot and perception as the "brain" that interprets what the eyes see. Sensing produces raw sensor readings like pixel values from a camera or distance measurements from LiDAR, while perception transforms these into meaningful information such as "there is an obstacle 2 meters ahead" or "this object is a chair."
 
 ## Mental Model

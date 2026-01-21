@@ -9,6 +9,8 @@ title: "Chapter 3: Camera-Based Perception"
 
 Camera-based perception involves extracting meaningful information from visual data captured by cameras. Unlike simple image processing, camera perception focuses on understanding the semantic content of images to enable robot decision-making. This includes recognizing objects, understanding spatial relationships, detecting features, and interpreting scenes in the context of robotic tasks.
 
+![Camera Perception Pipeline](/img/perception-diagrams/camera-perception.svg)
+
 Camera perception systems must handle challenges like varying lighting conditions, occlusions, perspective changes, and real-time processing requirements. The field combines classical computer vision techniques with modern learning-based approaches to extract robust perceptual information from visual data.
 
 ## Mental Model

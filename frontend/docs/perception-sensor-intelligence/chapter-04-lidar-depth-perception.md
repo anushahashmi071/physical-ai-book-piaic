@@ -9,6 +9,8 @@ title: "Chapter 4: LiDAR and Depth Perception"
 
 LiDAR (Light Detection and Ranging) and depth perception systems enable robots to understand the three-dimensional structure of their environment. Unlike camera-based systems that capture appearance, LiDAR systems measure precise distances to objects, creating detailed spatial maps of the environment. Depth perception involves interpreting this distance information to understand spatial relationships, identify obstacles, and navigate safely through 3D spaces.
 
+![LiDAR Perception Pipeline](/img/perception-diagrams/lidar-perception.svg)
+
 LiDAR systems work by emitting laser pulses and measuring the time it takes for the light to return after reflecting off surfaces. This provides accurate distance measurements that form the basis for 3D spatial understanding. Depth perception systems process these measurements to create representations of space that enable navigation, mapping, and spatial reasoning.
 
 ## Mental Model
