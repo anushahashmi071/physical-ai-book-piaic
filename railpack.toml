@@ -6,4 +6,8 @@ working_directory = "backend"
 
 [deploy]
 # Start command for the FastAPI app
-start_command = "uvicorn main:app --host 0.0.0.0 --port $PORT"
+start_command = "uvicorn main:app --host 0.0.0.0 --port $PORT --workers 2"
+
+# Environment variables (set these in Railway dashboard)
+# Required: QDRANT_URL, OPENAI_API_KEY (or GEMINI_API_KEY)
+# Optional: PORT (defaults to 8000), LOG_LEVEL, MODEL_NAME
