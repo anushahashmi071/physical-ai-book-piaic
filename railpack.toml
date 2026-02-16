@@ -1,0 +1,9 @@
+# Railway deployment configuration
+
+[build]
+# Tell Railway to use the backend directory
+working_directory = "backend"
+
+[deploy]
+# Start command for the FastAPI app
+start_command = "uvicorn main:app --host 0.0.0.0 --port $PORT"

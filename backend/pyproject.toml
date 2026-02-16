@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-chatbot-service"
+version = "0.1.0"
+description = "RAG Chatbot Service for Physical AI Book"
+readme = "README.md"
+authors = [{name = "Physical AI Team"}]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.5.0",
+    "qdrant-client>=1.8.0",
+    "openai>=1.3.5",
+    "sentence-transformers>=2.2.2",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.24.3",
+    "pydantic-settings>=2.1.0",
+    "requests>=2.31.0",
+    "tiktoken>=0.5.1",
+    "aiohttp>=3.9.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+    "isort>=5.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

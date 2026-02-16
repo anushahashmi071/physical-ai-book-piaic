@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://physical-ai-book-anusha.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -70,7 +70,7 @@ const config: Config = {
           label: 'Textbook',
         },
         {
-          href: 'https://github.com/physical-ai-book/physical-ai-book',
+          href: 'https://github.com/anushahashmi071/physical-ai-book-piaic',
           label: 'GitHub',
           position: 'right',
         },
@@ -105,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Repository',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/anushahashmi071/physical-ai-book',
             },
             {
               label: 'ROS 2 Documentation',
