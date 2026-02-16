@@ -1,13 +1,19 @@
 # Railway deployment configuration
+# Documentation: https://docs.railway.app/deployments/railpack
 
 [build]
-# Tell Railway to use the backend directory
-working_directory = "backend"
+# Specify the backend directory for the project
+root = "backend"
 
 [deploy]
 # Start command for the FastAPI app
 start_command = "uvicorn main:app --host 0.0.0.0 --port $PORT --workers 2"
 
-# Environment variables (set these in Railway dashboard)
-# Required: QDRANT_URL, OPENAI_API_KEY (or GEMINI_API_KEY)
-# Optional: PORT (defaults to 8000), LOG_LEVEL, MODEL_NAME
+# Environment variables (configure these in Railway dashboard)
+# Required:
+#   - QDRANT_URL: Your Qdrant vector database URL
+#   - OPENAI_API_KEY or GEMINI_API_KEY: Your LLM API key
+# Optional:
+#   - PORT: Defaults to $PORT from Railway (or 8000)
+#   - LOG_LEVEL: INFO (default), DEBUG, WARNING, ERROR
+#   - MODEL_NAME: gpt-3.5-turbo (default)
