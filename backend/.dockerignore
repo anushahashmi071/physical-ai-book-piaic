@@ -1,0 +1,61 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Large data files (don't include in Docker)
+*.json
+!requirements.txt
+!pyproject.toml
+logs/
+data/
+*.log
+
+# Development scripts
+scripts/
+test_*.py
+*_test.py
+
+# Documentation
+*.md
+!README.md
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Railway
+railpack.toml
+Procfile
+
+# Environment files
+.env
+.env.*
+!.env.example
