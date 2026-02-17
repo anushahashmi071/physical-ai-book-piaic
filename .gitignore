@@ -16,6 +16,10 @@ __pycache__/
 .Python
 *.so
 
+# Data files
+backend/extracted_textbook_content.json
+backend/processed_textbook_content.json
+
 # Environment
 .venv/
 venv/

@@ -6,7 +6,6 @@ from qdrant_client.http.models import Distance, VectorParams, PointStruct
 from models.content import ContentChunk, RetrievedChunk
 from config.settings import settings
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -23,13 +22,15 @@ class VectorStorageService:
                 url=settings.qdrant_url,
                 port=settings.qdrant_port,
                 api_key=settings.qdrant_api_key,
-                timeout=10
+                timeout=10,
+                check_compatibility=False
             )
         else:
             self.client = QdrantClient(
                 url=settings.qdrant_url,
                 port=settings.qdrant_port,
-                timeout=10
+                timeout=10,
+                check_compatibility=False
             )
 
         self.collection_name = settings.qdrant_collection_name
